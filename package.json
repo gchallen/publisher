@@ -2,6 +2,7 @@
   "name": "publisher",
   "version": "2024.6.0",
   "license": "MIT",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "checker": "npm run prettier && npm run eslint && npm run tsc && npm run depcheck",

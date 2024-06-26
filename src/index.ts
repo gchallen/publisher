@@ -8,7 +8,7 @@ import Koa, { Context } from "koa"
 import bodyParser from "koa-bodyparser"
 import rateLimit from "koa-ratelimit"
 import { Record, String } from "runtypes"
-import tempy from "tempy"
+import { temporaryFileTask } from "tempy"
 import util from "util"
 const exec = util.promisify(childProcess.exec)
 const db = new Map()
@@ -32,7 +32,7 @@ const router = new Router()
       const { success, score } = response
       await fs.appendFile("requests.txt", JSON.stringify({ ...response, email }, null, 2) + "\n")
       if (success && score > 0.5) {
-        tempy.temporaryFileTask(
+        temporaryFileTask(
           async (tempPath) => {
             await fs.writeFile(tempPath, email)
             await exec(`sudo /usr/lib/mailman/bin/subscribe_members -r ${tempPath} subscribers`)

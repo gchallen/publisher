@@ -4,19 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@koa/cors": "^3.1.0",
-    "@koa/router": "^10.0.0",
-    "email-validator": "^2.0.4",
-    "isomorphic-fetch": "^3.0.0",
-    "koa": "^2.13.1",
-    "koa-bodyparser": "^4.3.0",
-    "koa-ratelimit": "^5.0.0",
-    "tempy": "^1.0.1"
+    "@koa/cors": "5.0.0",
+    "@koa/router": "12.0.1",
+    "email-validator": "2.0.4",
+    "isomorphic-fetch": "3.0.0",
+    "koa": "2.15.3",
+    "koa-bodyparser": "4.4.1",
+    "koa-ratelimit": "5.1.0",
+    "tempy": "3.1.0"
   },
   "scripts": {
     "start": "env-cmd node src/index.js"
   },
   "devDependencies": {
-    "env-cmd": "^10.1.0"
+    "env-cmd": "10.1.0"
   }
 }

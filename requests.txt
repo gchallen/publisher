@@ -798,3 +798,11 @@
   "action": "subscribe",
   "email": "prajwolsubedizzz@gmail.com"
 }
+{
+  "success": true,
+  "challenge_ts": "2024-06-26T00:55:56Z",
+  "hostname": "dev.geoffreychallen.com",
+  "score": 0.9,
+  "action": "subscribe",
+  "email": "geoffrey.challen@gmail.com"
+}

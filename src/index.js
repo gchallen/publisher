@@ -8,7 +8,7 @@ const exec = util.promisify(require('child_process').exec)
 const ratelimit = require('koa-ratelimit')
 const db = new Map()
 const fetch = require('isomorphic-fetch')
-const tempy = require('tempy')
+const tempy = import('tempy')
 const fs = require('fs').promises
 
 const router = new Router()
